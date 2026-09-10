@@ -9,553 +9,103 @@
     <title>Sakhumzi Ngxili | Administrative & Digital Support</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f8fa;
-            color: #17202a;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            width: min(1120px, 92%);
-            margin: auto;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,0.96);
-            border-bottom: 1px solid #e5e7eb;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-inner {
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .logo span {
-            color: #2563eb;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
-            list-style: none;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .nav-links a:hover {
-            color: #2563eb;
-        }
-
-        /* HERO */
-
-        .hero {
-            min-height: 680px;
-            display: flex;
-            align-items: center;
-            background:
-                radial-gradient(circle at top right, #dbeafe 0, transparent 35%),
-                linear-gradient(135deg, #ffffff, #f4f7fb);
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .eyebrow {
-            display: inline-block;
-            padding: 7px 13px;
-            background: #e8f0ff;
-            color: #1d4ed8;
-            border-radius: 50px;
-            font-size: 13px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: clamp(44px, 7vw, 76px);
-            line-height: 0.98;
-            letter-spacing: -3px;
-            margin-bottom: 25px;
-        }
-
-        .hero h1 span {
-            color: #2563eb;
-        }
-
-        .hero p {
-            max-width: 650px;
-            font-size: 19px;
-            color: #52606d;
-            margin-bottom: 32px;
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 13px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 13px 21px;
-            border-radius: 9px;
-            font-size: 14px;
-            font-weight: 700;
-            transition: 0.2s ease;
-        }
-
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            border: 1px solid #d1d5db;
-            background: white;
-        }
-
-        .btn-secondary:hover {
-            border-color: #2563eb;
-            color: #2563eb;
-        }
-
-        .hero-card {
-            background: white;
-            padding: 35px;
-            border-radius: 22px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-            border: 1px solid #e8ebef;
-        }
-
-        .hero-card h3 {
-            margin-bottom: 18px;
-        }
-
-        .availability {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-            background: #22c55e;
-            border-radius: 50%;
-        }
-
-        .quick-skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tag {
-            padding: 7px 10px;
-            background: #f1f5f9;
-            border-radius: 7px;
-            font-size: 12px;
-            color: #334155;
-        }
-
-        /* GENERAL SECTIONS */
-
-        section {
-            padding: 90px 0;
-        }
-
-        .section-label {
-            color: #2563eb;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .section-title {
-            font-size: 38px;
-            line-height: 1.1;
-            margin-bottom: 18px;
-            letter-spacing: -1px;
-        }
-
-        .section-intro {
-            max-width: 700px;
-            color: #64748b;
-            margin-bottom: 45px;
-        }
-
-        /* ABOUT */
-
-        .about {
-            background: white;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-        }
-
-        .about-text p {
-            margin-bottom: 18px;
-            color: #52606d;
-        }
-
-        .strength-list {
-            display: grid;
-            gap: 14px;
-        }
-
-        .strength {
-            padding: 20px;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            background: #fafafa;
-        }
-
-        .strength strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .strength span {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* SKILLS */
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 25px;
-            border: 1px solid #e5e7eb;
-            border-radius: 14px;
-            transition: 0.2s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.06);
-        }
-
-        .skill-number {
-            color: #2563eb;
-            font-weight: 800;
-            font-size: 13px;
-            margin-bottom: 12px;
-        }
-
-        .skill-card h3 {
-            margin-bottom: 8px;
-        }
-
-        .skill-card p {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* EXPERIENCE */
-
-        .experience {
-            background: white;
-        }
-
-        .timeline {
-            max-width: 850px;
-        }
-
-        .job {
-            border-left: 3px solid #2563eb;
-            padding: 0 0 40px 28px;
-            margin-bottom: 10px;
-        }
-
-        .job:last-child {
-            padding-bottom: 0;
-        }
-
-        .job-date {
-            font-size: 13px;
-            color: #2563eb;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .job h3 {
-            font-size: 21px;
-            margin-bottom: 4px;
-        }
-
-        .job-company {
-            color: #64748b;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .job p {
-            color: #64748b;
-        }
-
-        /* EDUCATION */
-
-        .education-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .education-card {
-            background: white;
-            padding: 28px;
-            border: 1px solid #e5e7eb;
-            border-radius: 14px;
-        }
-
-        .education-card h3 {
-            margin-bottom: 7px;
-        }
-
-        .education-card p {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* PROJECTS */
-
-        .projects {
-            background: #f1f5f9;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .project {
-            background: white;
-            padding: 28px;
-            border-radius: 15px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .project-type {
-            font-size: 12px;
-            color: #2563eb;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 13px;
-        }
-
-        .project h3 {
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        .project-status {
-            display: inline-block;
-            margin-top: 18px;
-            font-size: 12px;
-            padding: 5px 9px;
-            background: #f1f5f9;
-            border-radius: 5px;
-            color: #475569;
-        }
-
-        /* CERTIFICATES */
-
-        .certificates {
-            background: white;
-        }
-
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-        }
-
-        .certificate {
-            padding: 20px;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-        }
-
-        .certificate strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .certificate span {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* CONTACT */
-
-        .contact {
-            background: #111827;
-            color: white;
-        }
-
-        .contact .section-label {
-            color: #93c5fd;
-        }
-
-        .contact p {
-            color: #cbd5e1;
-            max-width: 650px;
-            margin-bottom: 30px;
-        }
-
-        .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .contact-link {
-            padding: 12px 18px;
-            border: 1px solid #374151;
-            border-radius: 8px;
-            color: #e5e7eb;
-            font-size: 14px;
-        }
-
-        .contact-link:hover {
-            border-color: #93c5fd;
-            color: #93c5fd;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background: #0b1120;
-            color: #94a3b8;
-            padding: 25px 0;
-            font-size: 13px;
-        }
-
-        .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        /* MOBILE */
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f7f8fa; color: #17202a; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        .container { width: min(1120px, 92%); margin: auto; }
+        nav { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.96); border-bottom: 1px solid #e5e7eb; backdrop-filter: blur(10px); }
+        .nav-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+        .logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+        .logo span { color: #2563eb; }
+        .nav-links { display: flex; gap: 25px; list-style: none; font-size: 14px; font-weight: 600; }
+        .nav-links a:hover { color: #2563eb; }
+        .hero { min-height: 680px; display: flex; align-items: center; background: radial-gradient(circle at top right, #dbeafe 0, transparent 35%), linear-gradient(135deg, #ffffff, #f4f7fb); }
+        .hero-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 70px; align-items: center; }
+        .eyebrow { display: inline-block; padding: 7px 13px; background: #e8f0ff; color: #1d4ed8; border-radius: 50px; font-size: 13px; font-weight: 700; margin-bottom: 20px; }
+        .hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: 0.98; letter-spacing: -3px; margin-bottom: 25px; }
+        .hero h1 span { color: #2563eb; }
+        .hero p { max-width: 650px; font-size: 19px; color: #52606d; margin-bottom: 32px; }
+        .buttons { display: flex; flex-wrap: wrap; gap: 13px; }
+        .btn { display: inline-block; padding: 13px 21px; border-radius: 9px; font-size: 14px; font-weight: 700; transition: 0.2s ease; }
+        .btn-primary { background: #2563eb; color: white; }
+        .btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); }
+        .btn-secondary { border: 1px solid #d1d5db; background: white; }
+        .btn-secondary:hover { border-color: #2563eb; color: #2563eb; }
+        .hero-card { background: white; padding: 35px; border-radius: 22px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); border: 1px solid #e8ebef; }
+        .hero-card h3 { margin-bottom: 18px; }
+        .availability { display: flex; align-items: center; gap: 9px; font-size: 14px; margin-bottom: 25px; }
+        .dot { width: 10px; height: 10px; background: #22c55e; border-radius: 50%; }
+        .quick-skills { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { padding: 7px 10px; background: #f1f5f9; border-radius: 7px; font-size: 12px; color: #334155; }
+        section { padding: 90px 0; }
+        .section-label { color: #2563eb; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; margin-bottom: 10px; }
+        .section-title { font-size: 38px; line-height: 1.1; margin-bottom: 18px; letter-spacing: -1px; }
+        .section-intro { max-width: 700px; color: #64748b; margin-bottom: 45px; }
+        .about { background: white; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .about-text p { margin-bottom: 18px; color: #52606d; }
+        .strength-list { display: grid; gap: 14px; }
+        .strength { padding: 20px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fafafa; }
+        .strength strong { display: block; margin-bottom: 5px; }
+        .strength span { color: #64748b; font-size: 14px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+        .skill-card { background: white; padding: 25px; border: 1px solid #e5e7eb; border-radius: 14px; transition: 0.2s ease; }
+        .skill-card:hover { transform: translateY(-4px); box-shadow: 0 12px 35px rgba(0,0,0,0.06); }
+        .skill-number { color: #2563eb; font-weight: 800; font-size: 13px; margin-bottom: 12px; }
+        .skill-card h3 { margin-bottom: 8px; }
+        .skill-card p { color: #64748b; font-size: 14px; }
+        .experience { background: white; }
+        .timeline { max-width: 850px; }
+        .job { border-left: 3px solid #2563eb; padding: 0 0 40px 28px; margin-bottom: 10px; }
+        .job:last-child { padding-bottom: 0; }
+        .job-date { font-size: 13px; color: #2563eb; font-weight: 700; margin-bottom: 5px; }
+        .job h3 { font-size: 21px; margin-bottom: 4px; }
+        .job-company { color: #64748b; font-weight: 600; margin-bottom: 10px; }
+        .job p { color: #64748b; }
+        .education-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .education-card { background: white; padding: 28px; border: 1px solid #e5e7eb; border-radius: 14px; }
+        .education-card h3 { margin-bottom: 7px; }
+        .education-card p { color: #64748b; font-size: 14px; }
+        .projects { background: #f1f5f9; }
+        .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .project { background: white; padding: 28px; border-radius: 15px; border: 1px solid #e5e7eb; }
+        .project-type { font-size: 12px; color: #2563eb; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 13px; }
+        .project h3 { margin-bottom: 10px; }
+        .project p { color: #64748b; font-size: 14px; }
+        .project-status { display: inline-block; margin-top: 18px; font-size: 12px; padding: 5px 9px; background: #f1f5f9; border-radius: 5px; color: #475569; }
+        .certificates { background: white; }
+        .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .certificate { padding: 20px; border: 1px solid #e5e7eb; border-radius: 12px; }
+        .certificate strong { display: block; margin-bottom: 5px; }
+        .certificate span { color: #64748b; font-size: 14px; }
+        .contact { background: #111827; color: white; }
+        .contact .section-label { color: #93c5fd; }
+        .contact p { color: #cbd5e1; max-width: 650px; margin-bottom: 30px; }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
+        .contact-link { padding: 12px 18px; border: 1px solid #374151; border-radius: 8px; color: #e5e7eb; font-size: 14px; }
+        .contact-link:hover { border-color: #93c5fd; color: #93c5fd; }
+        footer { background: #0b1120; color: #94a3b8; padding: 25px 0; font-size: 13px; }
+        .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
         @media (max-width: 850px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 80px 0;
-            }
-
-            .hero-grid,
-            .about-grid,
-            .education-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid,
-            .projects-grid,
-            .cert-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+            .nav-links { display: none; }
+            .hero { min-height: auto; padding: 80px 0; }
+            .hero-grid, .about-grid, .education-grid { grid-template-columns: 1fr; }
+            .skills-grid, .projects-grid, .cert-grid { grid-template-columns: 1fr 1fr; }
         }
-
         @media (max-width: 600px) {
-
-            section {
-                padding: 65px 0;
-            }
-
-            .hero h1 {
-                letter-spacing: -2px;
-            }
-
-            .skills-grid,
-            .projects-grid,
-            .cert-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-            }
+            section { padding: 65px 0; }
+            .hero h1 { letter-spacing: -2px; }
+            .skills-grid, .projects-grid, .cert-grid { grid-template-columns: 1fr; }
+            .footer-inner { flex-direction: column; }
         }
     </style>
 </head>
-
 <body>
-
-    <!-- NAVIGATION -->
 
     <nav>
         <div class="container nav-inner">
-
-            <a href="#" class="logo">
-                Sakhumzi<span>Ngxili</span>
-            </a>
-
+            <a href="#" class="logo">Sakhumzi<span>Ngxili</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -564,691 +114,165 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
         </div>
     </nav>
 
-
-    <!-- HERO -->
-
     <header class="hero">
-
         <div class="container hero-grid">
-
             <div>
-
-                <div class="eyebrow">
-                    Open to Remote Opportunities
-                </div>
-
-                <h1>
-                    Sakhumzi<br>
-                    <span>Ngxili.</span>
-                </h1>
-
-                <p>
-                    Administrative support, data entry and digital operations
-                    professional focused on accuracy, organisation and reliable
-                    remote support.
-                </p>
-
+                <div class="eyebrow">Open to Remote Opportunities</div>
+                <h1>Sakhumzi<br><span>Ngxili.</span></h1>
+                <p>Administrative support, data entry and digital operations professional focused on accuracy, organisation and reliable remote support.</p>
                 <div class="buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        View My Work
-                    </a>
-
-                    <a href="#contact" class="btn btn-secondary">
-                        Get In Touch
-                    </a>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-
             </div>
-
-
             <div class="hero-card">
-
-                <div class="availability">
-                    <span class="dot"></span>
-                    Available for opportunities
-                </div>
-
-                <h3>
-                    What I can help with
-                </h3>
-
+                <div class="availability"><span class="dot"></span>Available for opportunities</div>
+                <h3>What I can help with</h3>
                 <div class="quick-skills">
-
-                    <span class="tag">Data Entry</span>
-                    <span class="tag">Data Capture</span>
-                    <span class="tag">Administrative Support</span>
-                    <span class="tag">Virtual Assistance</span>
-                    <span class="tag">Document Management</span>
-                    <span class="tag">Online Research</span>
-                    <span class="tag">Transcription</span>
-                    <span class="tag">Microsoft Office</span>
-                    <span class="tag">Google Workspace</span>
-                    <span class="tag">Canva</span>
-
+                    <span class="tag">Data Entry</span><span class="tag">Data Capture</span><span class="tag">Administrative Support</span><span class="tag">Virtual Assistance</span><span class="tag">Document Management</span><span class="tag">Online Research</span><span class="tag">Transcription</span><span class="tag">Microsoft Office</span><span class="tag">Google Workspace</span><span class="tag">Canva</span>
                 </div>
-
             </div>
-
         </div>
-
     </header>
 
-
-    <!-- ABOUT -->
-
     <section id="about" class="about">
-
         <div class="container">
-
             <div class="section-label">About Me</div>
-
             <div class="about-grid">
-
                 <div class="about-text">
-
-                    <h2 class="section-title">
-                        Organised, adaptable and detail-focused.
-                    </h2>
-
-                    <p>
-                        I am Sakhumzi Ngxili, a South African professional
-                        developing my career in administrative support,
-                        data entry, virtual assistance and digital operations.
-                    </p>
-
-                    <p>
-                        My experience includes telecommunications, manufacturing,
-                        data capture, transcription and digital work. I am
-                        comfortable working independently, managing information,
-                        processing documents and learning new systems.
-                    </p>
-
-                    <p>
-                        I also have a background in Financial Management studies,
-                        which strengthened my understanding of business,
-                        accounting and structured information.
-                    </p>
-
+                    <h2 class="section-title">Organised, adaptable and detail-focused.</h2>
+                    <p>I am Sakhumzi Ngxili, a South African professional developing my career in administrative support, data entry, virtual assistance and digital operations.</p>
+                    <p>My experience includes telecommunications, manufacturing, data capture, transcription and digital work. I am comfortable working independently, managing information, processing documents and learning new systems.</p>
+                    <p>I also have a background in Financial Management studies, which strengthened my understanding of business, accounting and structured information.</p>
                 </div>
-
-
                 <div class="strength-list">
-
-                    <div class="strength">
-                        <strong>Accuracy & Attention to Detail</strong>
-                        <span>Careful handling of information, documents and data.</span>
-                    </div>
-
-                    <div class="strength">
-                        <strong>Independent Working</strong>
-                        <span>Comfortable organising tasks and working without constant supervision.</span>
-                    </div>
-
-                    <div class="strength">
-                        <strong>Digital Adaptability</strong>
-                        <span>Confident learning new online platforms, software and workflows.</span>
-                    </div>
-
-                    <div class="strength">
-                        <strong>Professional Communication</strong>
-                        <span>Clear written communication and a professional approach to client support.</span>
-                    </div>
-
+                    <div class="strength"><strong>Accuracy & Attention to Detail</strong><span>Careful handling of information, documents and data.</span></div>
+                    <div class="strength"><strong>Independent Working</strong><span>Comfortable organising tasks and working without constant supervision.</span></div>
+                    <div class="strength"><strong>Digital Adaptability</strong><span>Confident learning new online platforms, software and workflows.</span></div>
+                    <div class="strength"><strong>Professional Communication</strong><span>Clear written communication and a professional approach to client support.</span></div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- SKILLS -->
 
     <section id="skills">
-
         <div class="container">
-
             <div class="section-label">Core Skills</div>
-
-            <h2 class="section-title">
-                Skills I bring to the workplace.
-            </h2>
-
-            <p class="section-intro">
-                A practical combination of administrative, digital and
-                information-management skills suited to remote and
-                office-based environments.
-            </p>
-
-
+            <h2 class="section-title">Skills I bring to the workplace.</h2>
+            <p class="section-intro">A practical combination of administrative, digital and information-management skills suited to remote and office-based environments.</p>
             <div class="skills-grid">
-
-                <div class="skill-card">
-                    <div class="skill-number">01</div>
-                    <h3>Data Entry</h3>
-                    <p>Accurate typing, data capture, formatting and information processing.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">02</div>
-                    <h3>Administrative Support</h3>
-                    <p>Document preparation, file organisation, routine administration and task support.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">03</div>
-                    <h3>Microsoft Office</h3>
-                    <p>Working knowledge of Word, Excel and common office productivity tasks.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">04</div>
-                    <h3>Google Workspace</h3>
-                    <p>Digital collaboration, documents, spreadsheets and online productivity workflows.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">05</div>
-                    <h3>Transcription</h3>
-                    <p>Experience typing audio recordings and editing transcription content.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">06</div>
-                    <h3>Online Research</h3>
-                    <p>Finding, organising and presenting relevant information clearly.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">07</div>
-                    <h3>File Management</h3>
-                    <p>Organising digital information, documents and records efficiently.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">08</div>
-                    <h3>Canva</h3>
-                    <p>Creating and editing professional digital documents and visual materials.</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-number">09</div>
-                    <h3>AI-Assisted Productivity</h3>
-                    <p>Using modern AI tools to research, organise information and improve workflows.</p>
-                </div>
-
+                <div class="skill-card"><div class="skill-number">01</div><h3>Data Entry</h3><p>Accurate typing, data capture, formatting and information processing.</p></div>
+                <div class="skill-card"><div class="skill-number">02</div><h3>Administrative Support</h3><p>Document preparation, file organisation, routine administration and task support.</p></div>
+                <div class="skill-card"><div class="skill-number">03</div><h3>Microsoft Office</h3><p>Working knowledge of Word, Excel and common office productivity tasks.</p></div>
+                <div class="skill-card"><div class="skill-number">04</div><h3>Google Workspace</h3><p>Digital collaboration, documents, spreadsheets and online productivity workflows.</p></div>
+                <div class="skill-card"><div class="skill-number">05</div><h3>Transcription</h3><p>Experience typing audio recordings and editing transcription content.</p></div>
+                <div class="skill-card"><div class="skill-number">06</div><h3>Online Research</h3><p>Finding, organising and presenting relevant information clearly.</p></div>
+                <div class="skill-card"><div class="skill-number">07</div><h3>File Management</h3><p>Organising digital information, documents and records efficiently.</p></div>
+                <div class="skill-card"><div class="skill-number">08</div><h3>Canva</h3><p>Creating and editing professional digital documents and visual materials.</p></div>
+                <div class="skill-card"><div class="skill-number">09</div><h3>AI-Assisted Productivity</h3><p>Using modern AI tools to research, organise information and improve workflows.</p></div>
             </div>
-
         </div>
-
     </section>
-
 
     <!-- EXPERIENCE -->
-
     <section id="experience" class="experience">
-
         <div class="container">
-
             <div class="section-label">Experience</div>
-
-            <h2 class="section-title">
-                Professional Experience
-            </h2>
-
-            <p class="section-intro">
-                Experience across telecommunications, manufacturing,
-                transcription and digital support environments.
-            </p>
-
-
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-intro">Experience across business administration, digital operations, telecommunications, manufacturing, transcription and information management.</p>
             <div class="timeline">
-
                 <div class="job">
-
-                    <div class="job-date">
-                        November 2020 – February 2021
-                    </div>
-
-                    <h3>
-                        Telecommunications Support
-                    </h3>
-
-                    <div class="job-company">
-                        Bangani Telecoms
-                    </div>
-
-                    <p>
-                        Worked in a customer-focused telecommunications
-                        environment, developing practical workplace,
-                        communication and sales-support experience.
-                    </p>
-
+                    <div class="job-date">2025 – Present</div>
+                    <h3>Founder & Administrator</h3>
+                    <div class="job-company">Psychology of Music Records (PM Records)</div>
+                    <p>Manage the administrative and operational activities of an independent record label, including planning, organisation, digital information management, project coordination and maintaining structured records and documentation.</p>
+                    <p style="margin-top: 12px;">Coordinate release schedules and digital projects while managing communications, content organisation and administrative workflows. Use digital platforms and AI-assisted tools to support research, planning and day-to-day operations.</p>
                 </div>
-
-
                 <div class="job">
-
-                    <div class="job-date">
-                        June 2021 – August 2022
-                    </div>
-
-                    <h3>
-                        General Workplace Experience
-                    </h3>
-
-                    <div class="job-company">
-                        Rocla
-                    </div>
-
-                    <p>
-                        Worked within a structured manufacturing environment,
-                        gaining experience with workplace procedures,
-                        teamwork, reliability and operational responsibilities.
-                    </p>
-
+                    <div class="job-date">November 2020 – February 2021</div>
+                    <h3>Sales & Telecommunications Support</h3>
+                    <div class="job-company">Bangani Telecoms</div>
+                    <p>Worked in a customer-focused telecommunications environment, developing practical experience in sales support, customer communication and day-to-day workplace operations.</p>
                 </div>
-
-
                 <div class="job">
-
-                    <div class="job-date">
-                        Freelance / Remote
-                    </div>
-
-                    <h3>
-                        Transcription & Data Support
-                    </h3>
-
-                    <div class="job-company">
-                        Freelance Digital Work
-                    </div>
-
-                    <p>
-                        Experience typing audio recordings, editing
-                        transcriptions and working with digital information
-                        using online platforms.
-                    </p>
-
+                    <div class="job-date">June 2021 – August 2022</div>
+                    <h3>General Worker & Operator</h3>
+                    <div class="job-company">Rocla</div>
+                    <p>Worked within a structured manufacturing environment, carrying out operational responsibilities while following workplace procedures, safety requirements and team-based processes.</p>
                 </div>
-
+                <div class="job">
+                    <div class="job-date">Freelance / Remote</div>
+                    <h3>Transcription & Data Support</h3>
+                    <div class="job-company">Freelance Digital Work</div>
+                    <p>Experience working with online transcription platforms, typing audio recordings and editing machine-generated or provided transcripts for accuracy and readability.</p>
+                </div>
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- PROJECTS -->
 
     <section id="projects" class="projects">
-
         <div class="container">
-
             <div class="section-label">Portfolio</div>
-
-            <h2 class="section-title">
-                Demonstration Projects
-            </h2>
-
-            <p class="section-intro">
-                Practical examples designed to demonstrate my ability to
-                organise information, work with data and provide digital
-                administrative support.
-            </p>
-
-
+            <h2 class="section-title">Demonstration Projects</h2>
+            <p class="section-intro">Practical examples designed to demonstrate my ability to organise information, work with data and provide digital administrative support.</p>
             <div class="projects-grid">
-
-                <div class="project">
-
-                    <div class="project-type">
-                        Data Entry
-                    </div>
-
-                    <h3>
-                        Data Organisation Project
-                    </h3>
-
-                    <p>
-                        A demonstration of structured data entry,
-                        formatting, sorting and information organisation.
-                    </p>
-
-                    <span class="project-status">
-                        Project being developed
-                    </span>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-type">
-                        Administration
-                    </div>
-
-                    <h3>
-                        Document Management System
-                    </h3>
-
-                    <p>
-                        A practical demonstration of organising digital
-                        documents and creating an efficient file structure.
-                    </p>
-
-                    <span class="project-status">
-                        Project being developed
-                    </span>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-type">
-                        Virtual Assistance
-                    </div>
-
-                    <h3>
-                        Administrative Workflow
-                    </h3>
-
-                    <p>
-                        A sample workflow demonstrating task organisation,
-                        scheduling, prioritisation and administrative support.
-                    </p>
-
-                    <span class="project-status">
-                        Project being developed
-                    </span>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-type">
-                        Transcription
-                    </div>
-
-                    <h3>
-                        Audio-to-Text Project
-                    </h3>
-
-                    <p>
-                        Demonstration of audio transcription, proofreading
-                        and formatting information into a professional document.
-                    </p>
-
-                    <span class="project-status">
-                        Project being developed
-                    </span>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-type">
-                        Research
-                    </div>
-
-                    <h3>
-                        Online Research Report
-                    </h3>
-
-                    <p>
-                        A demonstration of gathering information from
-                        reliable online sources and presenting findings clearly.
-                    </p>
-
-                    <span class="project-status">
-                        Project being developed
-                    </span>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-type">
-                        Excel
-                    </div>
-
-                    <h3>
-                        Spreadsheet Management
-                    </h3>
-
-                    <p>
-                        A practical spreadsheet example demonstrating
-                        organisation, data handling and basic reporting.
-                    </p>
-
-                    <span class="project-status">
-                        Project being developed
-                    </span>
-
-                </div>
-
+                <div class="project"><div class="project-type">Data Entry</div><h3>Data Organisation Project</h3><p>A demonstration of structured data entry, formatting, sorting and information organisation.</p><span class="project-status">Project being developed</span></div>
+                <div class="project"><div class="project-type">Administration</div><h3>Document Management System</h3><p>A practical demonstration of organising digital documents and creating an efficient file structure.</p><span class="project-status">Project being developed</span></div>
+                <div class="project"><div class="project-type">Virtual Assistance</div><h3>Administrative Workflow</h3><p>A sample workflow demonstrating task organisation, scheduling, prioritisation and administrative support.</p><span class="project-status">Project being developed</span></div>
+                <div class="project"><div class="project-type">Transcription</div><h3>Audio-to-Text Project</h3><p>Demonstration of audio transcription, proofreading and formatting information into a professional document.</p><span class="project-status">Project being developed</span></div>
+                <div class="project"><div class="project-type">Research</div><h3>Online Research Report</h3><p>A demonstration of gathering information from reliable online sources and presenting findings clearly.</p><span class="project-status">Project being developed</span></div>
+                <div class="project"><div class="project-type">Excel</div><h3>Spreadsheet Management</h3><p>A practical spreadsheet example demonstrating organisation, data handling and basic reporting.</p><span class="project-status">Project being developed</span></div>
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- EDUCATION -->
 
     <section id="education">
-
         <div class="container">
-
             <div class="section-label">Education</div>
-
-            <h2 class="section-title">
-                Education & Training
-            </h2>
-
-            <p class="section-intro">
-                Formal education and practical training supporting my
-                administrative and digital career development.
-            </p>
-
-
+            <h2 class="section-title">Education & Training</h2>
+            <p class="section-intro">Formal education and practical training supporting my administrative and digital career development.</p>
             <div class="education-grid">
-
-                <div class="education-card">
-
-                    <h3>
-                        NCV Financial Management
-                    </h3>
-
-                    <p>
-                        East Cape Midlands College
-                    </p>
-
-                    <p>
-                        Studied NCV Financial Management from Level 2 through
-                        Level 4, including Accounting and business-related subjects.
-                    </p>
-
-                </div>
-
-
-                <div class="education-card">
-
-                    <h3>
-                        Data Entry Training
-                    </h3>
-
-                    <p>
-                        Educourse
-                    </p>
-
-                    <p>
-                        Training focused on data entry and accurate
-                        information processing.
-                    </p>
-
-                </div>
-
+                <div class="education-card"><h3>NCV Financial Management</h3><p>East Cape Midlands College</p><p>Studied NCV Financial Management from Level 2 through Level 4, including Accounting and business-related subjects.</p></div>
+                <div class="education-card"><h3>Data Entry Training</h3><p>Educourse</p><p>Training focused on data entry and accurate information processing.</p></div>
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- CERTIFICATES -->
 
     <section class="certificates">
-
         <div class="container">
-
             <div class="section-label">Credentials</div>
-
-            <h2 class="section-title">
-                Certifications & Training
-            </h2>
-
-            <p class="section-intro">
-                Relevant training supporting my ability to work with
-                digital information and administrative tasks.
-            </p>
-
-
+            <h2 class="section-title">Certifications & Training</h2>
+            <p class="section-intro">Relevant training supporting my ability to work with digital information and administrative tasks.</p>
             <div class="cert-grid">
-
-                <div class="certificate">
-
-                    <strong>
-                        Data Entry Certificate
-                    </strong>
-
-                    <span>
-                        Educourse
-                    </span>
-
-                </div>
-
-
-                <div class="certificate">
-
-                    <strong>
-                        Computer Literacy Certificate
-                    </strong>
-
-                    <span>
-                        Work 4 A Living
-                    </span>
-
-                </div>
-
-
-                <div class="certificate">
-
-                    <strong>
-                        Retail Management & Operations
-                    </strong>
-
-                    <span>
-                        Professional Training
-                    </span>
-
-                </div>
-
-
-                <div class="certificate">
-
-                    <strong>
-                        Data Capture Training
-                    </strong>
-
-                    <span>
-                        Relevant data processing experience and training
-                    </span>
-
-                </div>
-
+                <div class="certificate"><strong>Data Entry Certificate</strong><span>Educourse</span></div>
+                <div class="certificate"><strong>Computer Literacy Certificate</strong><span>Work 4 A Living</span></div>
+                <div class="certificate"><strong>Retail Management & Operations</strong><span>Professional Training</span></div>
+                <div class="certificate"><strong>Data Capture Training</strong><span>Relevant data processing experience and training</span></div>
             </div>
-
         </div>
-
     </section>
-
-
-    <!-- CONTACT -->
 
     <section id="contact" class="contact">
-
         <div class="container">
-
-            <div class="section-label">
-                Contact
-            </div>
-
-            <h2 class="section-title">
-                Let's work together.
-            </h2>
-
-            <p>
-                I am open to administrative, data entry, virtual assistant,
-                customer support and other remote opportunities where I can
-                contribute reliable and organised digital support.
-            </p>
-
-
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's work together.</h2>
+            <p>I am open to administrative, data entry, virtual assistant, customer support and other remote opportunities where I can contribute reliable and organised digital support.</p>
             <div class="contact-links">
-
-                <a
-                    href="mailto:ngxilisakhumzi@gmail.com"
-                    class="contact-link">
-                    Email Me
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    class="contact-link">
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://github.com/"
-                    target="_blank"
-                    class="contact-link">
-                    GitHub
-                </a>
-
+                <a href="mailto:ngxilisakhumzi@gmail.com" class="contact-link">Email Me</a>
+                <a href="https://www.linkedin.com/" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/" target="_blank" class="contact-link">GitHub</a>
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- FOOTER -->
-
     <footer>
-
         <div class="container footer-inner">
-
-            <span>
-                © 2026 Sakhumzi Ngxili. All rights reserved.
-            </span>
-
-            <span>
-                Administrative • Data • Digital Support
-            </span>
-
+            <span>© 2026 Sakhumzi Ngxili. All rights reserved.</span>
+            <span>Administrative • Data • Digital Support</span>
         </div>
-
     </footer>
 
 </body>
