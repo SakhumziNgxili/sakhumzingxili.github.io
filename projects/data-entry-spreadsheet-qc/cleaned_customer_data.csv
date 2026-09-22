@@ -1,0 +1,21 @@
+Record ID,Full Name,Email,Phone,Date of Birth,Registration Date,City,Province,Status,Department,Postal Code,Notes,QC Flag,QC Notes
+C001,Thabo Mokoena,thabo.mokoena@gmail.com,0825550198,1995-04-12,2026-08-01,Gqeberha,Eastern Cape,Active,Sales,6001,,Review,Duplicate review
+C002,Nomsa Khumalo,nomsa.khumalo@gmail.com,0825550199,1994-11-23,2026-08-01,Cape Town,Western Cape,Active,Sales,8001,,Pass,
+C003,Sipho Dlamini,sipho.dlamini@example.com,0825550200,1989-06-17,2026-08-03,Durban,KwaZulu-Natal,Active,Operations,4001,Email spacing issue,Pass,
+C004,Lerato Molefe,lerato.molefe@gmail.com,0715550201,1988-02-09,2026-08-03,Johannesburg,Gauteng,Pending,Operations,2001,Missing phone,Review,Duplicate review; missing phone
+C005,John Peters,john.peters@gmail.com,0825550202,1990-09-07,2026-08-04,Pretoria,Gauteng,Active,Finance,0001,Phone field shifted,Review,Source field alignment requires verification
+C006,Ayanda Ndlovu,ayanda.ndlovu@gmail.com,0715550203,1997-01-15,2026-08-04,Gqeberha,Eastern Cape,Active,HR,6001,Province abbreviation,Pass,
+C007,Thabo Mokoena,thabo.mokoena@gmail.com,0825550198,1995-04-12,2026-08-01,Gqeberha,Eastern Cape,Active,Sales,6001,Possible duplicate of C001,Review,Duplicate review
+C008,Mpho Naidoo,mpho.naidoo@gmail.com,0835550205,1992-03-30,2026-08-05,Cape Town,Western Cape,Inactive,Sales,8001,US date format,Pass,
+C009,Zanele Jacobs,zanele.jacobs@gmail.com,0845550206,1991-12-01,2026-08-06,Bloemfontein,Free State,Pending,Finance,9301,,Pass,
+C010,Peter Williams,peter.williams@gmail.com,0725550207,1993-03-21,2026-08-06,East London,Eastern Cape,Active,Operations,5201,,Pass,
+C011,Nandi Cele,nandi.cele@gmail.com,0725550208,1996-05-30,2026-08-07,Durban,KwaZulu-Natal,Active,HR,4001,,Pass,
+C012,Kabelo Sithole,kabelo.sithole@gmail.com,0765550209,1990-10-08,2026-08-07,Johannesburg,Gauteng,Pending,Sales,2001,,Pass,
+C013,Aphiwe Mbeki,aphiwe.mbeki@gmail.com,0785550210,1998-07-14,2026-08-08,Mthatha,Eastern Cape,Active,HR,5099,,Pass,
+C014,Rene Van Wyk,rene.vanwyk@gmail.com,0795550211,1987-09-19,2026-08-08,Pretoria,Gauteng,Active,Finance,0001,,Pass,
+C015,Lwazi Nqayi,lwazi.nqayi@gmail.com,0805550212,1999-01-02,2026-08-09,Gqeberha,Eastern Cape,Pending,Operations,6001,,Pass,
+C016,Mandla Zulu,mandla.zulu@gmail.com,0815550213,1992-06-06,2026-08-09,Durban,KwaZulu-Natal,Active,Sales,4001,,Pass,
+C017,Sibongile Dube,sibongile.dube@gmail.com,0825550214,1995-08-25,2026-08-10,Johannesburg,Gauteng,Inactive,HR,2001,,Pass,
+C018,Karabo Molefe,karabo.molefe@gmail.com,0835550215,1994-02-18,2026-08-10,Polokwane,Limpopo,Active,Operations,0700,,Pass,
+C019,David Smith,david.smith@gmail.com,0845550216,1991-11-11,2026-08-11,Cape Town,Western Cape,Active,Finance,8001,,Pass,
+C020,Lerato Molefe,lerato.molefe@gmail.com,0715550201,1988-02-09,2026-08-03,Johannesburg,Gauteng,Pending,Operations,2001,Duplicate candidate,Review,Duplicate review
