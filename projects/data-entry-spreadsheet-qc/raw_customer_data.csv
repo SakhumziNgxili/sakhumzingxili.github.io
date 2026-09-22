@@ -1,0 +1,21 @@
+Record ID,Full Name,Email,Phone,Date of Birth,Registration Date,City,Province,Status,Department,Postal Code,Notes
+C001,  thabo Mokoena ,thabo.mokoena@gmail.com,082 555 0198,12/04/1995,2026-08-01,Gqeberha,Eastern Cape,Active,Sales,6001,
+C002,NOMSA KHUMALO,nomsa.khumalo@gmail.com,+27 82 555 0199,1994-11-23,01/08/2026,Cape Town,Western Cape,active,sales,8001,
+C003,Sipho Dlamini,sipho.dlamini @example.com,082-555-0200,1989-06-17,2026/08/03,Durban,KZN,Active,Operations,4001,Email spacing issue
+C004,Lerato  Molefe,071 555 0201,,1988-02-09,2026-08-03,Johannesburg,Gauteng,Pending,Operations,2001,Missing phone
+C005,John Peters,0825550202,0825550202,07/09/1990,2026-08-04,Pretoria,Gauteng,ACTIVE,Finance,0001,Phone field shifted
+C006,Ayanda Ndlovu,ayanda.ndlovu@gmail.com,+27 71 555 0203,1997-01-15,04-08-2026,Gqeberha,EC,Active,HR,6001,Province abbreviation
+C007,Thabo Mokoena,thabo.mokoena@gmail.com,082 555 0198,1995-04-12,2026-08-01,Gqeberha,Eastern Cape,Active,Sales,6001,Possible duplicate of C001
+C008,Mpho Naidoo,mpho.naidoo@gmail.com,083 555 0205,03/30/1992,2026-08-05,Cape Town,Western Cape,Inactive,Sales,8001,US date format
+C009,Zanele Jacobs,zanele.jacobs@gmail.com,084 555 0206,1991-12-01,2026-08-06,Bloemfontein,Free State,Pending,Finance,9301,
+C010,Peter Williams,peter.williams@gmail.com,072 555 0207,1993-03-21,2026-08-06,East London,Eastern Cape,Active,Operations,5201,
+C011,Nandi Cele,nandi.cele@gmail.com,+27 72 555 0208,1996-05-30,2026-08-07,Durban,KwaZulu-Natal,active,HR,4001,
+C012,Kabelo Sithole,kabelo.sithole@gmail.com,076 555 0209,1990-10-08,2026-08-07,Johannesburg,Gauteng,Pending,Sales,2001,
+C013,Aphiwe Mbeki,aphiwe.mbeki@gmail.com,078 555 0210,1998-07-14,2026-08-08,Mthatha,Eastern Cape,Active,HR,5099,
+C014,Rene van Wyk,rene.vanwyk@gmail.com,079 555 0211,1987-09-19,2026-08-08,Pretoria,Gauteng,Active,Finance,0001,
+C015,Lwazi  Nqayi,lwazi.nqayi@gmail.com,080 555 0212,1999-01-02,2026-08-09,Gqeberha,Eastern Cape,pending,Operations,6001,
+C016,Mandla Zulu,mandla.zulu@gmail.com,081 555 0213,1992-06-06,2026-08-09,Durban,KZN,Active,Sales,4001,
+C017,Sibongile Dube,sibongile.dube@gmail.com,082 555 0214,1995-08-25,2026-08-10,Johannesburg,Gauteng,Inactive,HR,2001,
+C018,Karabo Molefe,karabo.molefe@gmail.com,083 555 0215,1994-02-18,2026-08-10,Polokwane,Limpopo,Active,Operations,0700,
+C019,David Smith,david.smith@gmail.com,084 555 0216,1991-11-11,2026-08-11,Cape Town,Western Cape,Active,Finance,8001,
+C020,  Lerato Molefe,lerato.molefe@gmail.com,0715550201,1988-02-09,2026-08-03,Johannesburg,Gauteng,Pending,Operations,2001,Duplicate candidate; missing phone in C004
