@@ -1,4 +1,4 @@
-Company,Industry,Website,Location,Research Status,Key Information,Source Checked
-Example Logistics,Logistics,https://example.com,South Africa,Verified,Illustrative research record for portfolio demonstration,Yes
-Example Office Solutions,Business Services,https://example.com,South Africa,Verified,Illustrative research record for portfolio demonstration,Yes
-Example Digital Support,Technology Services,https://example.com,South Africa,Verified,Illustrative research record for portfolio demonstration,Yes
+Company,Industry,Website,South Africa Presence,Key Information,Source Checked
+DHL,Logistics and supply chain,https://www.dhl.com/za-en/home.html,Yes,"Express, freight, supply chain, warehousing and e-commerce logistics services",Yes
+DSV,Transport and logistics,https://www.dsv.com/en-za/,Yes,"Air, sea and road freight, warehousing, contract logistics and courier services",Yes
+Imperial,Integrated logistics and market access,https://www.imperiallogistics.com/,Yes,"Market access, contract logistics, road freight and lead logistics services",Yes
