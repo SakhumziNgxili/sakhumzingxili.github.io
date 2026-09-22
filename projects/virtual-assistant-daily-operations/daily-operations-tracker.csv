@@ -1,0 +1,11 @@
+Task ID,Area,Task,Priority,Owner,Due,Status,Next Action
+VA001,Inbox,Review client escalation,Urgent,Executive,Today,Open,Prepare decision summary
+VA002,Calendar,Confirm coaching call agenda,Important,EA,Today,In Progress,Send agenda
+VA003,Travel,Confirm conference flight,Important,EA,Today,Open,Confirm preferred option
+VA004,Follow-up,Send partner meeting options,Important,EA,Friday,Open,Propose three times
+VA005,Operations,Schedule weekly report review,Important,EA,Today,Open,Add calendar hold
+VA006,Event,Confirm final guest count,Urgent,Executive,Tomorrow,Open,Request final confirmation
+VA007,Sales,Update revised pipeline invite,Important,EA,Today,Open,Send updated invite
+VA008,Admin,Review contract renewal,Important,Operations,Monday,Delegated,Follow up Monday
+VA009,Inbox,Archive newsletter,Normal,EA,Friday,Complete,No action
+VA010,Calendar,Check team 1:1 conflict,Important,EA,Tomorrow,Open,Confirm availability
