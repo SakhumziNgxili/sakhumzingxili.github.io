@@ -1,0 +1,15 @@
+Metric,Result
+Source records received,20
+Records reviewed,20
+Potential duplicate records,4
+Records requiring review,5
+Email formatting issues,1
+Phone formatting/missing issues,2
+Province standardisations,2
+Status standardisations,5
+Final accepted records,16
+Record count reconciled,PASS
+Duplicate review completed,PASS
+Required-field review completed,PASS
+Date formats standardised,PASS
+Category values standardised,PASS
