@@ -1,0 +1,11 @@
+Document ID,Document Name,Category,Department,Version,Status,Owner,Review Date,Storage Path,Confidentiality,Last Updated
+DOC-001,Client Service Agreement,Contracts,Operations,1.2,Active,Sakhumzi,2026-10-15,Contracts/Active,Internal,2026-09-20
+DOC-002,Supplier Contact Register,Supplier Records,Procurement,2.0,Active,Sakhumzi,2026-10-30,Suppliers/Registers,Internal,2026-09-18
+DOC-003,Monthly Operations Report,Reports,Operations,3.1,Approved,Sakhumzi,2026-10-05,Reports/2026/September,Internal,2026-09-22
+DOC-004,Employee Leave Tracker,HR Records,Human Resources,1.4,Under Review,Sakhumzi,2026-09-30,HR/Leave,Restricted,2026-09-21
+DOC-005,Client Onboarding Checklist,Templates,Client Services,2.1,Active,Sakhumzi,2026-11-01,Templates/Client Onboarding,Internal,2026-09-19
+DOC-006,Quarterly Budget Worksheet,Finance,Finance,1.0,Draft,Sakhumzi,2026-09-28,Finance/2026/Q3,Restricted,2026-09-23
+DOC-007,Meeting Notes - Operations,Meeting Records,Operations,1.1,Archived,Sakhumzi,2026-09-25,Meetings/Operations/2026,Internal,2026-09-10
+DOC-008,Vendor Renewal Checklist,Templates,Procurement,1.3,Active,Sakhumzi,2026-10-20,Templates/Procurement,Internal,2026-09-17
+DOC-009,Data Entry Quality Checklist,Procedures,Administration,2.2,Approved,Sakhumzi,2026-10-12,Procedures/Data Entry,Internal,2026-09-16
+DOC-010,Emergency Contact List,HR Records,Human Resources,1.1,Active,Sakhumzi,2026-10-01,HR/Emergency Contacts,Restricted,2026-09-22
