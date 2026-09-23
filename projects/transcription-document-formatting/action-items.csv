@@ -1,0 +1,4 @@
+Action ID,Action,Owner,Priority,Due/Trigger,Status
+TA001,Confirm catering menu with Riverside Catering,Speaker 2,Important,Friday,Open
+TA002,Assemble client gift bags,Mike,Important,June 10,Open
+TA003,Send final guest count to venue,Speaker 2,Important,When confirmed guests reach 100,Pending trigger
