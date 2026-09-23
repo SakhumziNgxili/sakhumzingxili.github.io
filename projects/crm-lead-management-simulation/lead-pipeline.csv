@@ -1,0 +1,13 @@
+Lead ID,Company,Contact,Industry,Source,Lead Status,Pipeline Stage,Priority,Last Contact,Next Follow-up,Estimated Value,Owner,Next Action,Notes
+L001,Harbour Office Supplies,Nandi Mokoena,Office Supplies,Website,Qualified,Discovery,High,2026-09-21,2026-09-24,18500,Sakhumzi,Send discovery questions,Confirmed need for recurring office supplies
+L002,BluePeak Logistics,Thabo Jacobs,Logistics,LinkedIn,New,New Lead,Medium,2026-09-22,2026-09-25,32000,Sakhumzi,Initial qualification call,Operations contact identified
+L003,Coastal Dental Group,Dr Lerato Naidoo,Healthcare,Referral,Qualified,Proposal,High,2026-09-20,2026-09-23,24000,Sakhumzi,Follow up on proposal,Requested revised service scope
+L004,Eastline Property Services,Jason Williams,Property,Cold Outreach,Contacted,Qualification,Medium,2026-09-18,2026-09-26,12000,Sakhumzi,Confirm decision-maker,Awaiting response
+L005,MetroFresh Distribution,Ayesha Khan,Distribution,Website,Qualified,Negotiation,High,2026-09-22,2026-09-24,45000,Sakhumzi,Confirm commercial terms,Price discussion underway
+L006,GreenRoute Consulting,Palesa Dlamini,Consulting,Referral,Lost,Closed Lost,Low,2026-09-15,,9000,Sakhumzi,Archive and record reason,Selected another provider
+L007,Sunrise Training Hub,Michael Peters,Training,LinkedIn,Qualified,Discovery,Medium,2026-09-19,2026-09-24,16000,Sakhumzi,Book discovery meeting,Interested in recurring support
+L008,Nelson Bay Manufacturing,Andile Ndlovu,Manufacturing,Website,New,New Lead,High,2026-09-23,2026-09-24,38000,Sakhumzi,Verify requirements,Inbound enquiry needs qualification
+L009,PrimeCare Clinics,Nomsa Zulu,Healthcare,Referral,Contacted,Qualification,High,2026-09-17,2026-09-23,27500,Sakhumzi,Send qualification checklist,No response after first call
+L010,UrbanBuild Contractors,Ryan Smith,Construction,Cold Outreach,Qualified,Proposal,Medium,2026-09-21,2026-09-25,21000,Sakhumzi,Confirm proposal receipt,Proposal sent
+L011,Vertex IT Services,Samkelo Maseko,Technology,Website,Qualified,Negotiation,High,2026-09-22,2026-09-24,52000,Sakhumzi,Confirm final requirements,Commercial review scheduled
+L012,Karoo Hospitality Group,Zanele Mbeki,Hospitality,Referral,Contacted,Qualification,Medium,2026-09-16,2026-09-23,14000,Sakhumzi,Attempt second follow-up,No response to first contact
